@@ -105,7 +105,7 @@ describe("modal-dialog", () => {
                 });
             })
             .then((res) => {
-                assert.strictEqual(res, context);
+                assert.strictEqual(<any>res, context);
                 setTimeout(done, CLOSE_WAIT); // wait for the dialog to close in IOS
             }, err => done(err));
     });
